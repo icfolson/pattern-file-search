@@ -1,5 +1,7 @@
 # Pattern File Search
 
+![Travis CI Status](https://travis-ci.org/icfolson/pattern-file-search.svg?branch=master)
+
 Recursively searches a directory for files matching a pattern, optionally
 ignoring a pattern.
 
