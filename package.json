@@ -3,9 +3,13 @@
   "license": "MIT",
   "repository": "https://github.com/icfolson/pattern-file-search.git",
   "devDependencies": {
-    "chai": "^3.4.1"
+    "chai": "^3.4.1",
+    "mocha": "^2.3.3"
   },
   "dependencies": {
     "async": "^1.5.0"
+  },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha"
   }
 }
