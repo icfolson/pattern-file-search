@@ -28,8 +28,12 @@ module.exports = function(dir, /* optional */ pattern, /* optional */ excludePat
   fs.readdir(dir, function(err, files) {
     var outputFiles = []
     if (err) {
-      cb(err)
-      return
+      if (err.code === 'ENOTDIR') {
+        files = ['']
+      } else {
+        cb(err)
+        return
+      }
     }
     var dirs = []
 

@@ -49,4 +49,11 @@ describe("pattern file search", function() {
     })
   })
 
+  it("returns single file if path is a file", function(done) {
+    recursiveFileList(__dirname + '/fixtures/dir1/file1.js', function(err, list) {
+      expect(list.length).to.equal(1)
+      expect(list[0]).to.equal(__dirname + '/fixtures/dir1/file1.js')
+      done()
+    })
+  })
 })
