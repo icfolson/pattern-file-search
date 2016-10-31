@@ -2,7 +2,7 @@
   "name": "pattern-file-search",
   "license": "MIT",
   "repository": "https://github.com/icfolson/pattern-file-search.git",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "devDependencies": {
     "chai": "^3.4.1",
     "mocha": "^2.3.3"
