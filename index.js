@@ -51,7 +51,7 @@ module.exports = function(dir, /* optional */ pattern, /* optional */ excludePat
     async.map(files, fs.stat, function(err, results) {
       // Figure out which ones are directores that we need to recurse into
       files.forEach(function(file, i) {
-        if (results[i].isDirectory()) {
+        if (results[i] && results[i].isDirectory()) {
           dirs.push(file)
         } else {
           outputFiles.push(file)
